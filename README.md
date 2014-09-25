@@ -6,6 +6,7 @@ Prefix mapped to Ctrl-A for `screen` users.
 
 Installation
 ------------
+  Download SPF13 via curl
 
   Download:
 
@@ -17,6 +18,7 @@ git clone https://github.com/tony/tmux-config.git ~/.tmux
 
 ```bash
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/.tmux/.vimrc.local ~/.vimrc.local
 ```
 
   Go to config dir:
