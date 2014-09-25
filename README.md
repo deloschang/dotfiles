@@ -6,80 +6,26 @@ Prefix mapped to Ctrl-A for `screen` users.
 
 Installation
 ------------
-  Download SPF13 via curl
+  Curl SPF13
 
   Download:
 
 ```bash
-git clone https://github.com/tony/tmux-config.git ~/.tmux
+git clone https://github.com/deloschang/dotfiles.git ~/dotfiles
 ```
 
-  Copy tmux config to home:
+  Copy config to home:
 
 ```bash
-ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
-ln -s ~/.tmux/.vimrc.local ~/.vimrc.local
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/.vimrc.local ~/.vimrc.local
+ln -s ~/dotfiles/.fishrc ~/.config/fish/config.fish
 ```
 
   Go to config dir:
 
 ```bash
-cd ~/.tmux
-```
-
-Stats
------
-
-### tmux-mem-cpu-load
-
-(Linux-only)
-
-  Prep ourself to download submodule:
-
-```bash
-git submodule init
-```
-
-  Download submodule:
-
-```bash
-git submodule update
-```
-
-  Change dir to tmux-mem-cpu-load:
-
-```bash
-cd ~/.tmux/vendor/tmux-mem-cpu-load
-```
-
-  General make file:
-
-```bash
-cmake .
-```
-
-  Compile our binary:
-
-```bash
-make
-```
-
-  Install our binary to `/usr/local/bin/tmux-mem-cpu-load`:
-
-```bash
-sudo make install
-```
-
-  Go home:
-
-```bash
-cd ~
-```
-
-  Update config:
-
-```bash
-tmux source-file ~/.tmux.conf
+cd ~/dotfiles
 ```
 
 ### basic-cpu-and-memory.tmux
@@ -109,17 +55,17 @@ sudo chmod +x /usr/local/bin/tmux-mem-cpu-load
 Start tmux
 ----------
 
-  To start a session:
+  To start a session via “tmux”:
 
-  `tmux`
+  `tm`
 
   To reattach a previous session:
 
-  `tmux attach`
+  `ta #`
 
   To reload config file
 
-  `<Control + b>:` (which could Ctrl-B or Ctrl-A if you overidden it) then `source-file ~/.tmux.conf`
+  `<Control + a>r`
 
 Commands
 --------
@@ -142,8 +88,7 @@ Commands
   * `Control + a` then `[0-9]` move to window number
   * `Control + a` then `&` to kill window
 
+  Splitting windows:
 
-by Tony Narlock (tony@git-pull.com)
-
-* Github: http://www.github.com/tony
-* Website: http://www.git-pull.com
+  * `Control + a` then `v` vertical split like vim
+  * `Control + a` then `s` horizontal split
