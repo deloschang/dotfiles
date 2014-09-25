@@ -1,0 +1,18 @@
+set softtabstop=2
+set shiftwidth=2
+UnBundle 'airblade/vim-gitgutter'
+
+nmap ,cs :let @*=expand("%")<CR>
+nmap ,co :let @*=expand("%:p")<CR>
+
+let c = 1
+while c <= 99
+  execute "nnoremap " . c . "gb :" . c . "b\<CR>"
+  let c += 1
+endwhile
+
+let c = 1
+while c <= 99
+  execute "nnoremap " . c . "db :" . c . "bd\<CR>"
+  let c += 1
+endwhile
