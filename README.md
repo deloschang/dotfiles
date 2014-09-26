@@ -24,7 +24,7 @@ git clone https://github.com/deloschang/dotfiles.git ~/dotfiles
 ```bash
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.vimrc.local ~/.vimrc.local
-ln -s ~/dotfiles/.fishrc ~/.config/fish/config.fish
+cp ~/dotfiles/config.fish ~/.config/fish/config.fish
 ```
 
   Go to config dir:
