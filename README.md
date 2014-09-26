@@ -8,6 +8,11 @@ Installation
 ------------
   Curl SPF13
 
+  Install oh-my-fish:
+```bash
+curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish
+```
+
   Download:
 
 ```bash

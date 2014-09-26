@@ -5,6 +5,7 @@ Bundle 'Shougo/unite'
 
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,co :let @*=expand("%:p")<CR>
+nmap ,s :update<CR>
 
 let c = 1
 while c <= 99
