@@ -1,20 +1,20 @@
 set softtabstop=2
 set shiftwidth=2
 UnBundle 'airblade/vim-gitgutter'
-Bundle 'Shougo/unite'
 
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,co :let @*=expand("%:p")<CR>
-nmap ,s :update<CR>
 
 let c = 1
 while c <= 99
-  execute "nnoremap " . c . "gb :" . c . "b\<CR>"
-  let c += 1
-endwhile
+    execute "nnoremap " . c . "gb :" . c . "b\<CR>"
+      let c += 1
+    endwhile
 
-let c = 1
-while c <= 99
-  execute "nnoremap " . c . "db :" . c . "bd\<CR>"
-  let c += 1
-endwhile
+    let c = 1
+    while c <= 99
+        execute "nnoremap " . c . "db :" . c . "bd\<CR>"
+          let c += 1
+        endwhile
+
+set clipboard=unnamed
