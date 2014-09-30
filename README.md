@@ -25,6 +25,7 @@ git clone https://github.com/deloschang/dotfiles.git ~/dotfiles
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.vimrc.local ~/.vimrc.local
 cp ~/dotfiles/config.fish ~/.config/fish/config.fish
+cp ~/dotfiles/snippets/javascript.snippets ~/.vim/bundle/vim-snippets/snippets/javascript/
 ```
 
   Go to config dir:
