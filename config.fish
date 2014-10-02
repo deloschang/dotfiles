@@ -19,6 +19,7 @@ set fish_plugins vi-mode rails tmux
 ###  File ShortCut
 ################################
 alias j="cd ~/self_projects/jozy/"
+alias cl="cd ~/self_projects/clint/"
 alias gs="git status"
 alias ga="git add . "
 alias gd="git diff"

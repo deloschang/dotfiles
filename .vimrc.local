@@ -1,6 +1,7 @@
 set softtabstop=2
 set shiftwidth=2
 UnBundle 'airblade/vim-gitgutter'
+Bundle 'christoomey/vim-tmux-navigator'
 
 nmap ,cs :let @*=expand("%")<CR>
 nmap ,co :let @*=expand("%:p")<CR>
