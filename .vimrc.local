@@ -6,21 +6,20 @@ UnBundle 'airblade/vim-gitgutter'
 syntax enable
 let g:solarized_termtrans = 1
 colorscheme solarized
-togglebg#map("<F5>")
 
 " Easier buffer switching
 let c = 1
 while c <= 99
-    execute "nnoremap " . c . "gb :" . c . "b\<CR>"
-      let c += 1
-    endwhile
+  execute "nnoremap " . c . "gb :" . c . "b\<CR>"
+    let c += 1
+  endwhile
 
 " Easier buffer deletion
 let c = 1
 while c <= 99
-    execute "nnoremap " . c . "db :" . c . "bd\<CR>"
-      let c += 1
-    endwhile
+  execute "nnoremap " . c . "db :" . c . "bd\<CR>"
+    let c += 1
+  endwhile
 
 
 set clipboard=unnamed
@@ -48,3 +47,7 @@ function! XTermPasteBegin()
 endfunction
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+"Unite
+nnoremap <C-p> :Unite -toggle -start-insert -profile-name=ignorecase -buffer-name=search file_rec/async<CR>
+nnoremap <C-b> :Unite -toggle -buffer-name=buffer buffer<CR>
