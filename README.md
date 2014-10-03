@@ -24,8 +24,14 @@ git clone https://github.com/deloschang/dotfiles.git ~/dotfiles
 ```bash
 ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/dotfiles/.vimrc.local ~/.vimrc.local
+ln -s ~/dotfiles/.vimrc.bundles.local ~/.vimrc.bundles.local
 cp ~/dotfiles/config.fish ~/.config/fish/config.fish
 cp ~/dotfiles/snippets/javascript.snippets ~/.vim/bundle/vim-snippets/snippets/javascript/
+```
+
+  Installing bundles in vim:
+```
+:BundleInstall
 ```
 
   Go to config dir:
@@ -69,32 +75,46 @@ Start tmux
 
   `ta #`
 
+  To kill a session:
+  `tk #`
+
   To reload config file
 
   `<Control + a>r`
 
-Commands
+Tmux Commands
 --------
 
   Our prefix/leader key is `Control + a` now (just like the `screen` multiplexer). This sequence must be typed before any tmux shortcut.
 
   * `Control + a` before any command
   * `Control + a` then `?` to bring up list of keyboard shortcuts
-  * `Control + a` then `"` to split window
   * `Control + a` then `<Space>` to change pane arrangement
   * `Control + a` then `o` to rotate panes
-  * `Control + a` then `h`, `j`, `k`, `l` to move left, down, up, right. Respectively. (vim hjkl)
+  * `Control + h` or `j`, `k`, `l` to move left, down, up, right. Respectively. (vim hjkl using vim-tmux navigator)
   * `Control + a` then `;` to go to last panel
 
   Beyond your first window:
 
   * `Control + a` then `c` to create a new window
+  * `Control + a` then `C` to create a new named window
   * `Control + a` then `n` to next window
   * `Control + a` then `p` to previous window
   * `Control + a` then `[0-9]` move to window number
   * `Control + a` then `&` to kill window
+  * `Control + a` then `x` to kill pane
 
   Splitting windows:
 
   * `Control + a` then `v` vertical split like vim
   * `Control + a` then `s` horizontal split
+
+File Searching
+--------
+  * `Control + p` for ctrl+p style fuzzy-finding
+  * `Control + b` for ctrl+p in buffers
+
+iTerm
+--------
+  * Load preset .iterm.colors
+  * Run `python colors.py` to ensure your ANSI colors are working
