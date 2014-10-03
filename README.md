@@ -1,9 +1,3 @@
-[Tmux](http://tmux.sourceforge.net/) is a terminal multiplexer. Tested with tmux 1.5 and 1.6.
-
-This config has support for [tmux-mem-cpu](http://github.com/thewtex/tmux-mem-cpu-load).
-
-Prefix mapped to Ctrl-A for `screen` users.
-
 Installation
 ------------
   Curl SPF13
