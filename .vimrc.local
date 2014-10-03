@@ -24,6 +24,10 @@ while c <= 99
 
 set clipboard=unnamed
 
+nnoremap <leader>M :Rmodel<space>
+nnoremap <leader>R :Rcontroller<space>
+nnoremap <leader>D :Rmigration<space>
+
 
 " Easy tmux pasting
 function! WrapForTmux(s)
