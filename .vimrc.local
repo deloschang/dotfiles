@@ -28,6 +28,9 @@ nnoremap <leader>M :Rmodel<space>
 nnoremap <leader>R :Rcontroller<space>
 nnoremap <leader>D :Rmigration<space>
 
+" Easy highlighting removal after search
+nnoremap <leader>h :nohl<CR>
+
 
 " Easy tmux pasting
 function! WrapForTmux(s)
