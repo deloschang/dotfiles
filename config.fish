@@ -33,6 +33,8 @@ alias clint="cd ~/self_projects/clint"
 alias s="cd ~/s/"
 alias tm="tmux"
 alias tml="tmux list-sessions"
+alias hrc="heroku run rails console"
+alias pmr="./manage.py runserver 0.0.0.0:8000"
 
 
 function ta
